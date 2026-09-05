@@ -1,2 +1,5 @@
 .last-push
 .push.lock
+.tick.log
+.launchd.out
+.launchd.err

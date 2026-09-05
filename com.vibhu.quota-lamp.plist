@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.vibhu.quota-lamp</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/vibhumahendru/Desktop/claude-quota-lamp/lamp-tick.sh</string>
+  </array>
+
+  <!-- every 5 minutes; 300 = 288 Haiku one-liners a day, a rounding error -->
+  <key>StartInterval</key>
+  <integer>300</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/vibhumahendru/Desktop/claude-quota-lamp/.launchd.out</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/vibhumahendru/Desktop/claude-quota-lamp/.launchd.err</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/Users/vibhumahendru/.local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>/Users/vibhumahendru</string>
+  </dict>
+</dict>
+</plist>
